@@ -44,7 +44,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -61,37 +60,35 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    // Jetpack Compose Navigation
-    implementation("androidx.navigation:navigation-compose:2.7.5") // Usar la versión más reciente
+    // Jetpack Compose Navigation (estable: 2.8.7)
+    implementation("androidx.navigation:navigation-compose:2.8.7")
 
-    // Room Persistence Library
-    implementation("androidx.room:room-runtime:2.6.1") // Usar la versión más reciente
-    kapt("androidx.room:room-compiler:2.6.1") // annotationProcessor for Room
-    implementation("androidx.room:room-ktx:2.6.1") // Kotlin extensions for Room
+    // Room Persistence Library (estable: 2.6.1)
+    implementation("androidx.room:room-runtime:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
 
-    // SQLCipher for Room
-    implementation("net.zetetic:sqlcipher-android:4.5.3") // Usar la versión más reciente
+    // SQLCipher for Room (estable: 4.5.3)
+    implementation("net.zetetic:sqlcipher-android:4.5.3")
 
-    // Tink - Google's Crypto Library
-    implementation("com.google.crypto.tink:tink-android:1.12.0") // Usar la versión más reciente
+    // Tink - Google's Crypto Library (estable: 1.12.0)
+    implementation("com.google.crypto.tink:tink-android:1.12.0")
 
     // Argon2 - Password Hashing
-    implementation("com.kosprov.jargon2:jargon2-api:1.9.0") // Usar la versión más reciente
+    implementation("com.kosprov.jargon2:jargon2-api:1.3")
 
-    // Coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3") // Usar la versión más reciente
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3") // Usar la versión más reciente
+    // Coroutines (estable: 1.10.1)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.1")
 
-    // Material Design Icons
-    implementation("androidx.compose.material:material-icons-extended:1.7.0") // Usar la versión más reciente
+    // Material Design Icons (estable: 1.7.8)
+    implementation("androidx.compose.material:material-icons-extended:1.7.8")
 
-    // SplashScreen API (para pantallas de carga personalizadas)
-    implementation("androidx.core:core-splashscreen:1.0.1") // Usar la versión más reciente
+    // SplashScreen API (estable: 1.0.1)
+    implementation("androidx.core:core-splashscreen:1.0.1")
 
-    // Para selector de idioma (ejemplo, puede ser simplificado inicialmente)
-    implementation("androidx.core:core-ktx:1.12.0") // Usar la versión más reciente
-    implementation("androidx.appcompat:appcompat:1.7.0-alpha03") // Usar la versión más reciente
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0-alpha03") // Usar la versión más reciente
-
-
+    // Selector de idioma y compatibilidad general:
+    implementation("androidx.core:core-ktx:1.15.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
 }
